@@ -1,0 +1,85 @@
+body{
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  flex-direction: column;
+  margin: 0;
+}
+h4{
+  margin-top: 0;
+  margin-bottom: 2px;
+  letter-spacing: 2px;
+}
+
+#invoice {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 90vh; /* Set the height to fill the viewport */
+  width: 80%; /* Set a width for the form */
+  max-width: 600px; /* Set a maximum width for responsiveness */
+  padding: 0px; /* Add some padding to the form */
+  margin: 0;
+}
+
+form{
+  border: 1px solid black;
+ margin-bottom: 0px;
+}
+
+#invoice form label {
+  width: 150px; /* Set a fixed width for the labels to create uniformity */
+  display: inline-block;
+}
+
+#invoice input::placeholder {
+  color: black; /* Change the color to a desired color */
+}
+
+#invoice input {
+  border: none; /* Remove the border */
+}
+
+label{
+  font-size: 15px;
+}
+.goalsDiv{
+  display: inline-block;
+}
+#goals{
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+input[type=text]{
+  width: 300px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+  margin-bottom: 0px;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: center;
+  color: black;
+}
+
+.firstFild{
+display: flex;
+justify-content: start;
+
+}
+img{
+  height: 15px;
+  width: 15px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+

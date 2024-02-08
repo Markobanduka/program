@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert Program into PDF</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="invoice">
+    <form>
+      <h4>Personal Training Agreement</h4>
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" name="name" placeholder="/">
+      </div>
+      <div>
+        <label for="number">Number:</label>
+        <input id="number" name="number" placeholder="/">
+      </div>
+      <div class="goalsDiv">
+        <label for="golas">Goals:</label>
+        <input type="text" id="goalsPlaceholder" name="golas" placeholder="/">
+      </div>
+      <div>
+        <label for="sessions">Number of sessions:</label>
+        <input id="sessions" type="number" name="sessions" placeholder="">
+        <button id="addingRows" onclick="buildTable()">+</button>
+      </div>
+      <div>
+        <label for="duration">Duration:</label>
+        <input id="duration" name="duration" placeholder="1 hour">
+      </div>
+      <div>
+        <label for="amount">Amount:</label>
+        <input id="amount" name="amount" placeholder="/">
+      </div>
+      <div>
+        <label for="trainer">Name of trainer:</label>
+        <input id="trainer" name="trainer" placeholder="Ernalyn Camacho">
+      </div>
+      <table>
+        <tr>
+          <th>Date and time</th>
+          <th>Client signiture</th>
+          <th>PT</th>
+          <th><img src="img/360_F_144485947_omMceItN4n4xpMFbloGASmOxOH2zLrXz.jpg"></th>
+          <th>Date and time:</th>
+          <th>Client signiture</th>
+          <th>PT</th>
+        </tr>
+        <tbody id="myTable"></tbody>
+      </table>
+    </form>
+    
+ 
+  </div>
+  <button class="downolad" onclick="generatePDF()">Downolad as PDF</button>
+</body>
+</html>
