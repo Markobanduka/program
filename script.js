@@ -32,4 +32,19 @@ function buildTable() {
       }
   
 }
+document.addEventListener('DOMContentLoaded', function() {
+  exactTime();
+});
 
+ function exactTime(){
+  const dateInput = document.getElementById('date');
+  const today = new Date()
+  const f= new Intl.DateTimeFormat("es-sp", {
+    dateStyle: "short",
+  })
+  const formattedDate = f.format(today);
+  console.log(formattedDate); // For debugging purposes
+  dateInput.value = formattedDate;
+ }
+
+ 
